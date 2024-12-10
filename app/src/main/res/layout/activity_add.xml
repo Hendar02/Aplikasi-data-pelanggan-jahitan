@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/txID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txNama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Nama"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Masuk"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txTglmasuk"
+                android:enabled="false"
+                android:text="Masukan Tanggal masuk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal selesai"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txTglselesai"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Tanggal Kembali"
+                android:inputType="date"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lebar Pundak"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txLebarPundak"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Pundak"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lingkar Badan"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txlingkarBadan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Lingkar Badan"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panjang Tangan"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txPanjangTangan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Panjang Tangan"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lingkar Pinggang"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txLingkarPinggang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Lingkar Pinggang"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lingkar Pinggul"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txLingkarPinggul"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Lingkar Pinggul"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panjang Baju"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txPanjangBaju"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Panjang Baju"
+                android:inputType="textCapSentences"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Baju"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <EditText
+                android:id="@+id/txModelBaju"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukan Model Baju"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Proses Selesai"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="gone"/>
+
+</RelativeLayout>
